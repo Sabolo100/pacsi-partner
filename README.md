@@ -1,6 +1,6 @@
 # Pacsi – partneri ajánlat
 
-Léptethető webes prezentáció kutyás márkáknak (v1.1.0, build ae887c3).
+Léptethető webes prezentáció kutyás márkáknak (v1.1.1, build 90eec76).
 
 - Élő oldal: https://sabolo100.github.io/pacsi-partner/
 - Személyre szabás: a link végére `#p-Marka-Neve` (kötőjel = szóköz)
