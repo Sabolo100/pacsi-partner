@@ -531,7 +531,7 @@ html.doc .hint { display: none; }
       <div class="a" style="--i:4;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center">
         <div class="qr" id="qr" aria-label="QR-kód a Pacsi webes változatához"></div>
         <p class="tt">Próbálja ki most</p>
-        <a class="t" href="https://sabolo100.github.io/DogsClaude/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700">sabolo100.github.io/DogsClaude</a>
+        <a class="t" href="https://pacsit.hu/?utm_source=partner&utm_medium=deck&utm_campaign=pacsi" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700">pacsit.hu</a>
         <p class="src">Ingyenes, regisztráció nélkül · telefonon appként is telepíthető</p>
       </div>
     </div>
@@ -553,7 +553,7 @@ html.doc .hint { display: none; }
       <li>NÉBIH-adat, Pénzcentrum, 2024. szeptember 8. – gyepmesteri telepekre került kutyák 2023-ban. <a href="https://www.penzcentrum.hu/vasarlas/20240908/ezert-a-kutyaert-orulnek-meg-a-magyarok-2024-ben-vagyonokert-vasaroljak-1155928" target="_blank" rel="noopener">penzcentrum.hu</a></li>
       <li>DataReportal: Digital 2026 Hungary – közösségimédia-felhasználók. <a href="https://datareportal.com/reports/digital-2026-hungary" target="_blank" rel="noopener">datareportal.com</a></li>
     </ol>
-    <p class="src" style="margin-top:auto">Pacsi partneri ajánlat · v1.1.2 · build 60e8966 · Pacsi by DarwinAI · www.darwinai.hu</p>
+    <p class="src" style="margin-top:auto">Pacsi partneri ajánlat · v1.1.3 · build fd6a170 · Pacsi by DarwinAI · www.darwinai.hu</p>
   </div>
 </section>
 
@@ -593,7 +593,7 @@ if (partner) document.title = `Pacsi – ajánlat: ${partner}`;
 slides.forEach((s, i) => { const p = s.querySelector('.pnum'); if (p) p.textContent = `${String(i + 1).padStart(2, '0')} / ${N}`; });
 
 /* QR-kód a Pacsi webes változatához (ha a könyvtár nem töltődik be, csak a link marad) */
-try { const q = qrcode(0, 'M'); q.addData('https://sabolo100.github.io/DogsClaude/'); q.make(); document.getElementById('qr').innerHTML = q.createSvgTag({ cellSize: 6, margin: 0, scalable: true }); }
+try { const q = qrcode(0, 'M'); q.addData('https://pacsit.hu/?utm_source=partner&utm_medium=deck&utm_campaign=pacsi');   // a statisztikában „partner / deck” forrásként látszik q.make(); document.getElementById('qr').innerHTML = q.createSvgTag({ cellSize: 6, margin: 0, scalable: true }); }
 catch (e) { document.getElementById('qr').hidden = true; }
 
 /* mód: prezentáció (széles, fekvő ablak) vagy dokumentum (telefon, álló ablak) */
